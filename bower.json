@@ -1,0 +1,26 @@
+{
+  "name": "socket.io-trial",
+  "version": "0.0.0",
+  "authors": [
+    "fhnstephen <fhnstephen@gmail.com>"
+  ],
+  "description": "socket io trial project",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "socket.io"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": [
+    
+  ]
+}

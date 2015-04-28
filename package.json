@@ -1,0 +1,16 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "angular": "^1.3.15",
+    "angular-socket-io": "^0.7.0",
+    "bootstrap": "^3.3.4",
+    "express": "^4.12.3",
+    "jquery": "^2.1.3",
+    "oauth": "^0.9.12",
+    "oauth2-server": "^2.4.0",
+    "socket.io": "^1.3.5",
+    "socket.io-client": "^1.3.5"
+  }
+}
