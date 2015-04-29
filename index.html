@@ -1,6 +1,7 @@
 <html ng-app="MyApp">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Socket.io Chat Room</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -13,24 +14,22 @@
 </head>
 <body ng-controller="MasterCtrl">
   <h1 class="text-center">Socket.io Chatroom</h1>
-  <form>
-    <div class="container">
-      <div class="input-group">
-        <input type="text" class="form-control" ng-model="username" placeholder="username">
-        <span class="input-group-btn">
-          <button class="btn btn-primary" ng-click="connect(username)">
-            Connect
-          </button>
-        </span>
-      </div>
-      <div class="input-group" ng-if="connected">
-        <input type="text" class="form-control" ng-model="message">
-        <span class="input-group-btn">
-          <button ng-click="sendMessage(message)" class="btn btn-primary">Send</button>
-        </span>
-      </div>
+  <div class="container">
+    <div class="input-group">
+      <input type="text" class="form-control" ng-model="username" placeholder="username">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" ng-click="connect(username)">
+          Connect
+        </button>
+      </span>
     </div>
-  </form>
+    <div class="input-group" ng-if="connected">
+      <input type="text" class="form-control" ng-model="message">
+      <span class="input-group-btn">
+        <button ng-click="sendMessage(message)" class="btn btn-primary">Send</button>
+      </span>
+    </div>
+  </div>
 
   <div class="container">
     <ul>

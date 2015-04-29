@@ -49,6 +49,7 @@ app.get('/', function(req, res) {
 io.on('connection', function(socket) {
   socket.name = socket.decoded_token.name;
   console.log('Hello', socket.name);
+  io.emit('chat message', {name: 'system', mes: socket.name + " has joined the chatroom."});
   socket.on('disconnect', function() {
     console.log('Bye',  socket.name);
   });
