@@ -5,12 +5,16 @@
   "dependencies": {
     "angular": "^1.3.15",
     "angular-socket-io": "^0.7.0",
+    "body-parser": "^1.12.3",
     "bootstrap": "^3.3.4",
     "express": "^4.12.3",
     "jquery": "^2.1.3",
+    "jsonwebtoken": "^5.0.0",
     "oauth": "^0.9.12",
     "oauth2-server": "^2.4.0",
+    "oauth20-provider": "^0.6.0",
     "socket.io": "^1.3.5",
-    "socket.io-client": "^1.3.5"
+    "socket.io-client": "^1.3.5",
+    "socketio-jwt": "^4.0.0"
   }
 }
